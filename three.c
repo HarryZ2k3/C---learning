@@ -1,5 +1,5 @@
 //Huynh Phuong Dai ITITWE21039
-#include <stdio.h>;
+#include <stdio.h>
 
 int main ()
 {
