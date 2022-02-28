@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Huynh Phương Dai ITITWE21039
 int main()
 {
     int x,y,z;
@@ -15,4 +15,4 @@ int main()
     printf("Sum of x,y,z is %d\n",sum);
 
     return 0;
-}+
+}
