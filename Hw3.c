@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 
-int main();
+int main()
 {
     int n;
     printf("Enter your number: ");
-    scanf("%d",&n)
+    scanf("%d",&n);
     while (n==0)
         {
-            temp = 10;
-            n=%temp;
+            int temp = 10;
+            n= n % temp;
             printf("%d\t",n);
             temp *=10;
         }
