@@ -3,14 +3,20 @@
 
 int main()
 {
-    int n, temp;
+    int n, temp,remp,reverse=0;
     printf("Enter your number: ");
     scanf("%d",&n);
-    while (n!=0)
+    while(n!= 0)
     {
-        temp = n %10;
-        n = n/10;
-        
+        remp=n%10;
+        reverse=reverse*10+remp;
+        n/=10;
+    }
+
+    while (reverse!=0)
+    {
+        temp = reverse %10;
+        reverse = reverse/10;
         printf("%d\t",temp);
     }
     return 0;
