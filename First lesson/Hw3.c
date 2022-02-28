@@ -8,10 +8,9 @@ int main()
     scanf("%d",&n);
     while (n==0)
         {
-            int temp = 10;
-            n= n % temp;
-            printf("%d\t",n);
-            temp *=10;
+            int temp;
+            temp = n%10;
+            printf("%d\t",temp);
         }
 
     return 0;
