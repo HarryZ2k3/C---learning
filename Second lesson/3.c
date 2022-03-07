@@ -16,7 +16,7 @@ int main()
     {
         max=y;
     }
-    if (max<z);
+    if (max<z)
     {
         max=z;
     }
@@ -25,7 +25,7 @@ int main()
     {
         min=y;
     }
-    if (min>z);
+    if (min>z)
     {
         min=z;
     }
