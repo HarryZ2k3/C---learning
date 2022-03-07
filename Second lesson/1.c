@@ -15,7 +15,7 @@ int main()
     v = u + a*t;
     s=  (float)u*t + (a*t*t)/2;
     printf("The initial velocity of the object is %d\n",v);
-    printf("Distance travelled is %f",s);
+    printf("Distance travelled is %0.2f",s);
     
     return 0;
 }
