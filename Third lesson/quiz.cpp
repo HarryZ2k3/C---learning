@@ -1,33 +1,77 @@
-/*Nhap so thu 1, so thu2 so thu 3, so sanh tim so lon nhat gan vao lonnhat, lonnhi. lien tuc loop den khi het so luong so cua minh nhap bang so luong so da nhap*/
-//Huynh Phuong Dai - ITITWE21039
-#include <iostream>
-#include <conio.h>
+/*
 
-using namespace std;
+Let's two largest numbers are max1, max2.
 
-int main ()
-{
-    int lonnhat = 0, lonnhi=0;
-    int n=1;
-    int num1=0,num2=0,num3=0;
-    cout <<"nhap so so N so ban can nhap ";
-    cin >> n;
+- Input the first number num, assign max1 = max2 = num
+
+- repeat :
+
+    + Input a new number num
+
+    + if num > max1, then max2 = max1 and max1 = num;
+
+    + if num < max1 and num > max2, max2 = num
+
+ until the number of inputs reach the limit
+
+- print max1 and max2
+
+*/
+
+
+
+#include <stdio.h>
+
+
+
+int main(){
+
+    int max1, max2, num;
+
+    int limit = 5;
+
+
+
+    printf("Input first number: ");
+
+    scanf("%d", &num);
+
+    max1 = num;
+
+    max2 = num;
+
+
+
     int count = 1;
-    cout << "Nhap so" << endl;
-    while (count <= n)
-    {
-        cin >> num1;
-        ++count;
-        cin >> num2;
-        ++count;
-        cin >> num3;
-        ++count;
-        if (num1 < num2 && num1 <num3)
-        {
-            lonnhat=num2;
-            lonnhi=num3;
+
+    while (count < limit) {
+
+        printf("Input a number: ");
+
+        scanf("%d", &num);
+
+        if (num > max1){
+
+            max2 = max1;
+
+            max1 = num;
+
         }
+
+        if ((num < max1) && (num > max2)){
+
+            max2 = num;
+
+        }
+
+        // ++count;
+
+        count += 1;
+
     }
-    cout << "Hai so lon nhat la:" << lonnhat << " va " << lonnhi;
-    return 0;
+
+
+
+    printf("Max1 is %d, max2 is %d\n", max1, max2);
+
 }
