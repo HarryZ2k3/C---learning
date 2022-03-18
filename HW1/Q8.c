@@ -19,7 +19,7 @@ int main()
         printf("&&&&&\n"); 
     }
 //b)
-    int y=8;
+    y=8;
     if (x==8)
     {
         if (y==5)
@@ -35,7 +35,7 @@ int main()
     return 0;
     }
 //c)
-    int y=8;
+    y=8;
     if (x==8)
     {
         if (y==5)
@@ -51,7 +51,7 @@ int main()
     return 0;
     }
 //d)
-    int y=7;
+    y=7;
     if (x==8)
     {
         if (y==5)
