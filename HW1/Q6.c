@@ -1,4 +1,8 @@
 //Huynh Phuong Dai - ITITWE21039
+/*
+The algorithm works by constantly running a while loop and checking for the input for -1 to stop
+simply take the input, run it through the calculation of salary = $200 + 9%* sales and outputting the result 
+*/
 #include <stdio.h>
 
 int main()
