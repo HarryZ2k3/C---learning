@@ -1,5 +1,5 @@
 //Huynh Phuong Dai - ITITWE21039
-/* check the interger if it's divisible by any number between 2 and that interger divided by 2 
+/* check the interger if it's divisible by any number between 2 and that interger
 */
 #include <stdio.h>
 #include <math.h>
@@ -12,7 +12,7 @@ int main ()
     //input the prime number n
     for (i=2;i<=sqrt(n);i++)
     {
-        //if n is divisible by any number between 2 and n/2 it's not a prime number
+        //if n is divisible by any number between 2 and sqrt of it it's not a prime number
         if(n%i==0)
         {
             check = 0;
