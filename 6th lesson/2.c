@@ -7,7 +7,10 @@
 int main()
 {
     double i;
-    i = rand();
+    int n;
+    i = rand(); // any ran number
+    printf("%f",i);
+    i = 1 + (rand()%n); // any ran number from 1 to n
     printf("%f",i);
     return 0;
 }
