@@ -3,13 +3,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
     int guess;
-    unsigned seed;
-    seed = 1+rand()%1000;
-    srand(seed);
+    srand (time(NULL));
     int number;
     number = 1+ rand() %1000;
     printf("Here we have a number between 1-1000, enter your first guess\n");
