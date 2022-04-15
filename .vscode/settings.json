@@ -4,6 +4,10 @@
         "iostream": "cpp",
         "Q2.C": "cpp",
         "Q5.C": "cpp",
-        "Q4.C": "cpp"
+        "Q4.C": "cpp",
+        "Q1.C": "cpp",
+        "Q3.C": "cpp",
+        "Q6.C": "cpp",
+        "Q7.C": "cpp"
     }
 }
