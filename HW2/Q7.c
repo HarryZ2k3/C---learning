@@ -13,11 +13,22 @@ int main()
     int a=5,b=10,c=8;//initialize the test numbers
     if (CheckTriangleSides(a,b,c)) //run the function
     {
-        printf("Valid"); //if true
+        printf("Valid\n"); //if true
     }
     else
     {
-        printf("Invalid"); // if false
+        printf("Invalid\n"); // if false
+    }
+    a=1;
+    b=10;
+    c=12;//initialize the test numbers
+    if (CheckTriangleSides(a,b,c)) //run the function
+    {
+        printf("Valid\n"); //if true
+    }
+    else
+    {
+        printf("Invalid\n"); // if false
     }
     return 0;
 }
