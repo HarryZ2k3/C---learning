@@ -10,6 +10,7 @@
         "Q6.C": "cpp",
         "Q7.C": "cpp",
         "Q13.C": "cpp",
-        "Q2 copy.C": "cpp"
+        "Q2 copy.C": "cpp",
+        "cmath": "cpp"
     }
 }
