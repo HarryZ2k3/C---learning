@@ -3,17 +3,18 @@
 
 int main()
 {
-    double sales[19];
-    printf("Enter sales datta: \n");
-    for(int i=0;i<20;i++)
+    double sales[20];//array declaration
+    int i;
+    printf("Enter sales data: \n");// use input
+    for(i=0;i<20;i++) //assigning number in the array
     {
-        double temp;
-        scanf("%d",&temp);
-        sales[i]= temp;
+        scanf("%lf",&sales[i]);
     }
-    for(int i=0;i<20;i++)
+
+    printf("The contentes of sales are: \n");
+    for(i=0;i<20;i++)//print out the variable in the array
     {
-        printf("%d ",sales[i]);
+        printf("%.2lf ",sales[i]);
     }
     return 0;
 }
