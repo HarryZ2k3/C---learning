@@ -5,19 +5,19 @@ int elapse(int,int,int);//function declaration
 int main()
 {
     int hour,minute,second;
-    printf("Enter hours,minutes,seconds(range from 00:00:00 - 23:59:59: ");//Input from user
+    printf("Enter hours,minutes,seconds(range from 00:00:00 - 23:59:59): ");//Input from user
     scanf("%d %d %d",&hour,&minute,&second);
     while(hour > 23 || minute > 59 || second > 59)// just in case the user enters an invalid time
     {
-        if (hour < 23)
+        if (hour > 23)
         {
             printf("\nInvalid hour value~!");
         }
-        if (minute < 59)
+        else if (minute > 59)
         {
             printf("\nInvalid minute value~!");
         }
-        if (second < 59)
+        else if (second > 59)
         {
             printf("\nInvalid second value~!");
         }
