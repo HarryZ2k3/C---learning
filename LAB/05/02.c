@@ -21,7 +21,7 @@ int main()
     scanf("%d",&number);
     for (int i=0;i<count;i++)
     {
-        for(int j=0;j<count;j++)
+        for(int j=i;j<count;j++)
             {
                 if (arr[i]+arr[j]==number)
                 {    
