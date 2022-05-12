@@ -1,20 +1,58 @@
 //Huynh Phuong Dai - ITITWE21039
 //input the string of characters
 //index number starts at 1
-//check the string, starting from the first character start rolling, if the second 
-//character is different, index +1, check the 2nd with the third, if different, index +2
-//charater is the same and index is larger than 1, print out the string and the length = index
+//check the string for Unique series of words. Using the "WINDOW SLIDING TECHNQUIUE"
 #include <stdio.h>
-
+#include <stdbool.h>
+#include <string.h>
+#define SIZE 50
+int FindLongestUniqueSS(char arr[]);
+bool Uniqueness(char arr[],int i,int j);
+int max (int a,int b);
 int main()
 {   
-    int check=1;
-    int index =1;
-    char c[50] ="bcabcbbabacbab";
-    for (int i=0;i<50;i++)
-    {
-        
+
+    char c[SIZE];
+    printf("Enter the contents of the string (z to end):\n");
+    for (int i=0;i<SIZE;i++)
+    {   
+        scanf("%c",&c[i]);
+        if(c[i]=='z')
+            break;
     }
-    printf("\nLength= %d",index);
+    int length = FindLongestUniqueSS(c);
+    printf("\nLength= %d");
     return  0;
+}
+
+int FindLongestUniqueSS(char arr[])
+{
+    int n = strlen(arr);
+    int index;
+    for (int i=0;i<n;i++)
+    {
+        for (int j;j<n;j++)
+        {
+            if (Uniqueness(arr,i,j)==true)
+                index = max(index,j-i+1);
+        }
+    }
+    return index;
+}
+
+bool Uniqueness(char arr[],int i,int j)
+{
+    bool visited[SIZE];
+    for (int k=i;k<j;k=k+1)
+    {
+        if(visited[arr[k]]==true)
+            return false;
+        visited[arr[k]]=true;
+    }
+    return true;
+}
+
+int max(int a,int b)
+{
+    return (a>b)?a:b;
 }
