@@ -17,9 +17,9 @@ int main()
 }
 void swap(int *a,int *b)
 {
-    int z = *a;
+    int temp = *a;
     *a = *b;
-    *b=z;
+    *b=temp;
 }
 void bubbleSort( int * const a,const int size_t)
 {
