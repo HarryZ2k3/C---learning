@@ -13,6 +13,8 @@
         "Q2 copy.C": "cpp",
         "cmath": "cpp",
         "Q5a.C": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "barrier": "c",
+        "bitset": "c"
     }
 }
