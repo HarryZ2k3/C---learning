@@ -14,60 +14,7 @@
 int main()
 {
     //start of index
-<<<<<<< HEAD
-    const char * single_digit[10] =
-    {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-    const char* teens[]=
-    {"", "eleven","tweleve","thirteen","fourteen","fifteen","seventeen", "eighteen","nineteen"};
-
-    const char* tens_ty[]=
-    {"","", "twenty", "thirty","forty","fifty"," sixty", "seventy","eighty", "ninety"} ;
-
-    const char* hundred_thousand[]={"hundred","thousand"};
-    //end of index
-    
-    printf("Enter your number (max 9999)");
-    char* num;
-    gets(num);
-    int len= strlen(num);
-    if (len ==0)
-        printf("you didn't enter any numbers");
-    if (len >4)
-        printf("The number is to large");
-    while (*num != '\0')
-    {
-        if (len >=3 )
-        {
-            if (*num - '0'!=0)
-            {
-                printf("%s", single_digit[*num - '0']);
-                printf("%s",hundred_thousand[len-3]);
-            }
-        }
-        else 
-        {
-            if(*num=='1')
-            {
-                int sum = *num-'0' + *(num+1) - '0';
-                printf("%s",tens_ty[sum]);
-            }
-        
-            else if(*num=='2' && *(num+1)=='0')
-            {
-            printf("Twenty");
-            }
-            else 
-            {
-            int i=*num-'0';
-            printf("%s",i? tens_ty[i]:"");
-            ++num;
-            }
-        }
-        ++num;
-    }
-
-=======
     const char * single_digit[10]= 
     {"zero","one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
@@ -140,7 +87,6 @@ int main()
         default: 
             printf("%s\n",single_digit[*num -'0']); //the actual value pointed to the number is ASCII means that we have to subtract '0' to get desired number
     }
->>>>>>> f1a954bbb8bdbc6fc8c51e1087244b97f66c0ba2
     return 0;
 }
 //p/s: To the one who has to grade this, I am sorry, but time is running out and I have no other choice :< please treat me well
