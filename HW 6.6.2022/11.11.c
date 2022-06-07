@@ -5,10 +5,10 @@
 
 // clientData structure definition               
 struct clientData {                              
-   unsigned int acctNum; // account number
-   char lastName[15]; // account last name    
-   char firstName[10]; // account first name   
-   char age[4]; // account balance   
+   unsigned int acctNum; 
+   char lastName[15]; 
+   char firstName[10]; 
+   char age[4]; 
 };             
  
 int main(void) 
