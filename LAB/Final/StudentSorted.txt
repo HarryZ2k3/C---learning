@@ -1,0 +1,5 @@
+This is the Sorted file
+
+NAME: ô	Cal1: 33.45 		Cal2: 90.60 		Cal3: 90.60 		ID : 96 	GPA: 68.32
+NAME: (	Cal1: 34.50 		Cal2: 77.80 		Cal3: 77.80 		ID : 55 	GPA: 67.66
+NAME: \	Cal1: 90.70 		Cal2: 33.40 		Cal3: 33.40 		ID : 102 	GPA: 56.20
