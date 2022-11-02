@@ -74,19 +74,19 @@ int main(void)
     return 0;
 }
 
-void sort(int Arr[],size_t size)
+void sort(int Arr[],size_t count)
 {
     int i,j;
     int temp;
-    for (i=0;i<size;i++)
+    for (i=0;i<count-1;i++)
     {
-        for(j=i+1;j<size;j++)
+        for(j=0;j<count-i-1;j++)
         {
-            if(Arr[i]>Arr[j])
+            if(Arr[j]>Arr[j+1])
             {
-                temp = Arr[i];
-                Arr[i]=Arr[j];
-                Arr[j]=temp;
+                temp = Arr[j];
+                Arr[j]=Arr[j+1];
+                Arr[j+1]=temp;
             }
         }
     }
